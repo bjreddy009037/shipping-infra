@@ -18,4 +18,7 @@ module "mysql" {
   INSTANCE_CLASS = var.INSTANCE_CLASS
   ENV = var.ENV
   COMPONENT = var.COMPONENT
+  VPC_ID = module.vpc.VPC_ID
+  VPC_CIDR = module.vpc.VPC_CIDR
+  SUBNET_IDS = module.vpc.SUBNET_IDS
 }
